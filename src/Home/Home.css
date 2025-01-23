@@ -1,0 +1,132 @@
+.home {
+  padding: 0rem 0.625rem;
+  padding-bottom: 6.25rem;
+}
+
+.hero {
+  max-width: 48rem;
+  margin: 7rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.875rem;
+}
+
+.hero h1 {
+  font-size: max(2vw, 2.5rem);
+}
+
+.hero p {
+  width: 100%;
+  color: #e3e3e3;
+  line-height: 1.5;
+}
+
+.hero form {
+  padding: 0.5rem;
+  width: 80%;
+  background-color: white;
+  border-radius: 0.313rem;
+  -webkit-border-radius: 0.313rem;
+  -moz-border-radius: 0.313rem;
+  -ms-border-radius: 0.313rem;
+  -o-border-radius: 0.313rem;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.hero input {
+  flex: 1;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  padding-left: 0.625rem;
+}
+
+.hero button {
+  border: none;
+  outline: none;
+  background: #7927ff;
+  color: white;
+  font-size: 1rem;
+  padding: 0.625rem 1.875rem;
+  border-radius: 0.313rem;
+  -webkit-border-radius: 0.313rem;
+  -moz-border-radius: 0.313rem;
+  -ms-border-radius: 0.313rem;
+  -o-border-radius: 0.313rem;
+  cursor: pointer;
+}
+
+.crypto-table {
+  max-width: 90rem;
+  margin: auto;
+  background: linear-gradient(rgba(84, 3, 255, 0.15), rgba(105, 2, 153, 0.15));
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+.table-layout {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 1fr 1fr 1.5fr;
+  padding: 1rem 1.25rem;
+  align-items: center;
+  border-bottom: 1px solid #3c3c3c;
+}
+
+.market-cap {
+  text-align: right;
+}
+
+.table-layout:last-child {
+  border: none;
+}
+
+.table-layout div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.table-layout div img {
+  width: 2.5rem;
+}
+
+.table-layout .green {
+  color: #00d515;
+  text-align: center;
+}
+
+.table-layout .red {
+  color: #ff4646;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .table-layout {
+    gap: 1rem;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr;
+  }
+  .market-cap {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .table-layout div img {
+    width: 1.563rem;
+  }
+  .table-layout {
+    font-size: 0.75rem;
+  }
+  .hero form input {
+    width: 6.25rem;
+  }
+}

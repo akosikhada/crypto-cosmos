@@ -1,0 +1,77 @@
+.spinner {
+  display: grid;
+  place-self: center;
+  min-height: 100vh;
+}
+
+.spin {
+  width: 4.063rem;
+  height: 4.063rem;
+  place-self: center;
+  border: 0.313rem solid #bdbdbd;
+  border-top-color: #4500c6;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  animation: rotate 2s infinite;
+  -webkit-animation: rotate 2s infinite;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
+}
+
+.coin {
+  padding: 0 1.25rem;
+}
+
+.coin-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  margin: 6.25rem auto;
+  margin-bottom: 3.125rem;
+}
+
+.coin-name img {
+  max-width: 6.25rem;
+}
+
+.coin-name p b {
+  font-size: 2.75rem;
+  font-weight: 900;
+}
+
+.coin-chart {
+  max-width: 48rem;
+  height: 16rem;
+  margin: auto;
+}
+
+.coin-info {
+  max-width: 48rem;
+  margin: 3.125rem auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.coin-info ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.625rem 0rem;
+  border-bottom: 0.063rem solid #5f5d5f;
+  list-style: none;
+}
+
+.coin-info ul li:last-child {
+  font-weight: bold;
+}
